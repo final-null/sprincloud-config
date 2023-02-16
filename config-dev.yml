@@ -8,7 +8,9 @@ spring:
     
 #mybatis
 mybatis:
-  mapperLocations: classpath:mapper/*.xml
+  mapperLocations: 
+    -classpath:mapper/*.xml
+    -classpath:com/**/**/dao/*.xml
   type-aliases-package: com.xw.entity
 
 #eureka
