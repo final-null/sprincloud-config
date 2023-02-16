@@ -10,7 +10,6 @@ spring:
 mybatis:
   mapperLocations: 
     -classpath:mapper/*.xml
-    -classpath:com/**/**/dao/*.xml
   type-aliases-package: com.xw.entity
 
 #eureka
