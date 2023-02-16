@@ -1,18 +1,8 @@
-server:
-  port: 3344
 spring:
-  application:
-    name: cloud-config-center
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/final-null/sprincloud-config.git # 填写你自己的github路径
-          search-paths:
-            - springcloud-config # 仓库名称
-      label: master # 在那个分支上
-eureka:
-  client:
-    service-url:
-      defaultZone:  http://localhost:7001/eureka
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db2019?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
   
